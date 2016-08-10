@@ -100,10 +100,7 @@ typedef NS_ENUM(NSUInteger,  YXPageViewControllerRefreshType) {
  *  @param failure 失败回调
  */
 -(void)yxpage_getModelsWithPage:(NSUInteger)page success:(void (^)(id models,NSUInteger totalPage))success failure:(void (^)(NSString *error))failure;
-/**
- *  @return 是否可以分页
- */
-- (BOOL)yxpage_pageable;
+
 /**当没有数据是显示什么内容*/
 - (NSString *)yxpage_noDataText;
 /** noDataText显示控件与上端的距离 */

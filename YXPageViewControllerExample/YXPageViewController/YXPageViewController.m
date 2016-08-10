@@ -229,6 +229,23 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     return 80;
 }
 
+#pragma mark- 缓存第一页相关配置
+
+/** 当第一页获取网络失败的时候会利用此方法获取到缓存 */
+- (NSArray *)page_getFirstPageCache{
+    //    if([self page_cacheType]){
+    //        return [YXModelTool getFirstPageCacheWithType:[self page_cacheType]];
+    //    }
+    return nil;
+}
+/** 适当时机 会调用此方法缓存第一页的所有models */
+
+- (void)yxpage_saveFirstPageCacheWithModels:(NSArray *)models{
+    //    if([self page_cacheType]){
+    //            [YXModelTool saveFirstPageCacheWithType:[self page_cacheType] data:models];
+    //    }
+}
+
 //page 配置相关
 #pragma mark- 私有
 
@@ -264,36 +281,33 @@ dispatch_sync(dispatch_get_main_queue(), block);\
             }else{
                 [YXRefresh endFooterRefresh:weakSelf.tableView];
             }
-            if(models){
-                if(weakSelf.yxpage_pageNum==1){
-                    [weakSelf yxpage_saveFirstPageCacheWithModels:models];
-                }
-            }
+            
             if(models.count){
+                //有数据
                 NSUInteger startIndex;
                 [weakSelf hideText];
                 if(weakSelf.yxpage_pageNum==1){
+                    //第一页
+                    [weakSelf yxpage_saveFirstPageCacheWithModels:models];
                     [weakSelf.models removeAllObjects];
-                    [weakSelf.models addObjectsFromArray:models];
-                    [weakSelf.tableView reloadData];
                 }else{
+                    //非第一页
                     startIndex=weakSelf.models.count;
-                    
-                    [weakSelf.models addObjectsFromArray:models];
-                    [weakSelf.tableView reloadData];
-                    
                 }
+                [weakSelf.models addObjectsFromArray:models];
+                [weakSelf.tableView reloadData];
                 
             }else{
+                //没有数据的时候
                 if(weakSelf.yxpage_pageNum==1){
-                    //没有数据的时候
-                    
+                    //第一页
                     [weakSelf showText:[weakSelf yxpage_noDataText]];
                     [weakSelf.models removeAllObjects];
                     [weakSelf.tableView reloadData];
                 }
             }
             
+            //如果页码大于等于总页数,隐藏footer
             if(weakSelf.yxpage_pageNum>=totalPage){
                 //当加载全部的数据的时候隐藏上拉刷新
                 [YXRefresh hideFooter:self.tableView hide:YES];
@@ -303,7 +317,6 @@ dispatch_sync(dispatch_get_main_queue(), block);\
             //当尚未加载全部数据的时候显示上拉刷新
             [YXRefresh hideFooter:self.tableView hide:NO];
             [weakSelf.tableView setNeedsDisplay];
-            
             weakSelf.yxpage_pageNum++;
             
 
@@ -317,7 +330,7 @@ dispatch_sync(dispatch_get_main_queue(), block);\
             }else{
                 if (type==YXPageViewControllerRefreshTypeHeader) {
                     if(weakSelf.yxpage_pageNum==1){
-                        //如果有缓存，取缓存
+                        //如果是第一页
                         NSArray *cache= [weakSelf page_getFirstPageCache];
                         if(cache.count){
                             [weakSelf.models removeAllObjects];
@@ -419,41 +432,23 @@ dispatch_sync(dispatch_get_main_queue(), block);\
     self.label.hidden=YES;
     self.nodataImageView.hidden=YES;
 }
-#pragma mark- 缓存第一页相关
-
-/** 当第一页获取网络失败的时候会利用此方法获取到缓存 */
-- (NSArray *)page_getFirstPageCache{
-    //    if([self page_cacheType]){
-    //        return [YZModelTool getFirstPageCacheWithType:[self page_cacheType]];
-    //    }
-    return nil;
-}
 
 /** 展示缓存的第一页，需要主动调用 */
 - (void)yxpage_showFirstPageCache{
-    //    if([self page_cacheType]){
-    //        NSArray *cache = [self page_getFirstPageCache];
-    //        if(cache.count){
-    //            [self.models removeAllObjects];
-    //            [self.models addObjectsFromArray:cache];
-    //            [self.tableView reloadData];
-    //        }
-    //    }
-    
+    NSArray *cache = [self page_getFirstPageCache];
+    if(cache.count){
+        [self.models removeAllObjects];
+        [self.models addObjectsFromArray:cache];
+        [self.tableView reloadData];
+    }
 }
 
-- (void)yxpage_saveFirstPageCacheWithModels:(NSArray *)models{
-    //    if([self page_cacheType]){
-    //        dispatch_async(dispatch_get_main_queue(), ^{
-    //            [YZModelTool saveFirstPageCacheWithType:[self page_cacheType] data:models];
-    //        });
-    //    }
-}
 
-/** 实现了这个方法，会自动加上缓存第一页的功能 */
-- (NSString *)yxpage_cacheType{
-    return nil;
-}
+
+
+
+
+
 
 #pragma mark- 懒加载
 
