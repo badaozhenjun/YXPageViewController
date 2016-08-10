@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE7FA21C1D5AD73500667059 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA21B1D5AD73500667059 /* main.m */; };
+		DE7FA21F1D5AD73500667059 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA21E1D5AD73500667059 /* AppDelegate.m */; };
+		DE7FA2251D5AD73500667059 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7FA2231D5AD73500667059 /* Main.storyboard */; };
+		DE7FA2271D5AD73500667059 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE7FA2261D5AD73500667059 /* Assets.xcassets */; };
+		DE7FA22A1D5AD73500667059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE7FA2281D5AD73500667059 /* LaunchScreen.storyboard */; };
+		DE7FA2351D5AD73600667059 /* YXPageViewControllerExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2341D5AD73600667059 /* YXPageViewControllerExampleTests.m */; };
+		DE7FA2401D5AD73600667059 /* YXPageViewControllerExampleUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA23F1D5AD73600667059 /* YXPageViewControllerExampleUITests.m */; };
+		DE7FA2501D5AD76A00667059 /* YXPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA24F1D5AD76A00667059 /* YXPageViewController.m */; };
+		DE7FA2531D5AD77600667059 /* YXTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2521D5AD77600667059 /* YXTableCell.m */; };
+		DE7FA2561D5AD77F00667059 /* YXRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2551D5AD77F00667059 /* YXRefresh.m */; };
+		DE7FA2621D5AF41A00667059 /* Framework-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DE7FA25C1D5AF41A00667059 /* Framework-Info.plist */; };
+		DE7FA2631D5AF41A00667059 /* MBProgressHUD+Add.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA25E1D5AF41A00667059 /* MBProgressHUD+Add.m */; };
+		DE7FA2641D5AF41A00667059 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2611D5AF41A00667059 /* MBProgressHUD.m */; };
+		DE7FA2921D5AF44800667059 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2681D5AF44800667059 /* MJRefreshAutoFooter.m */; };
+		DE7FA2931D5AF44800667059 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA26A1D5AF44800667059 /* MJRefreshBackFooter.m */; };
+		DE7FA2941D5AF44800667059 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA26C1D5AF44800667059 /* MJRefreshComponent.m */; };
+		DE7FA2951D5AF44800667059 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA26E1D5AF44800667059 /* MJRefreshFooter.m */; };
+		DE7FA2961D5AF44800667059 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2701D5AF44800667059 /* MJRefreshHeader.m */; };
+		DE7FA2971D5AF44800667059 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2751D5AF44800667059 /* MJRefreshAutoGifFooter.m */; };
+		DE7FA2981D5AF44800667059 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2771D5AF44800667059 /* MJRefreshAutoNormalFooter.m */; };
+		DE7FA2991D5AF44800667059 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2791D5AF44800667059 /* MJRefreshAutoStateFooter.m */; };
+		DE7FA29A1D5AF44800667059 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA27C1D5AF44800667059 /* MJRefreshBackGifFooter.m */; };
+		DE7FA29B1D5AF44800667059 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA27E1D5AF44800667059 /* MJRefreshBackNormalFooter.m */; };
+		DE7FA29C1D5AF44800667059 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2801D5AF44800667059 /* MJRefreshBackStateFooter.m */; };
+		DE7FA29D1D5AF44800667059 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2831D5AF44800667059 /* MJRefreshGifHeader.m */; };
+		DE7FA29E1D5AF44800667059 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2851D5AF44800667059 /* MJRefreshNormalHeader.m */; };
+		DE7FA29F1D5AF44800667059 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2871D5AF44800667059 /* MJRefreshStateHeader.m */; };
+		DE7FA2A01D5AF44800667059 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = DE7FA2881D5AF44800667059 /* MJRefresh.bundle */; };
+		DE7FA2A11D5AF44800667059 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA28B1D5AF44800667059 /* MJRefreshConst.m */; };
+		DE7FA2A21D5AF44800667059 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA28D1D5AF44800667059 /* UIScrollView+MJExtension.m */; };
+		DE7FA2A31D5AF44800667059 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA28F1D5AF44800667059 /* UIScrollView+MJRefresh.m */; };
+		DE7FA2A41D5AF44800667059 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2911D5AF44800667059 /* UIView+MJExtension.m */; };
+		DE7FA2B51D5AF78300667059 /* UITableView+FDIndexPathHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2AE1D5AF78300667059 /* UITableView+FDIndexPathHeightCache.m */; };
+		DE7FA2B61D5AF78300667059 /* UITableView+FDKeyedHeightCache.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2B01D5AF78300667059 /* UITableView+FDKeyedHeightCache.m */; };
+		DE7FA2B71D5AF78300667059 /* UITableView+FDTemplateLayoutCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2B21D5AF78300667059 /* UITableView+FDTemplateLayoutCell.m */; };
+		DE7FA2B81D5AF78300667059 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2B41D5AF78300667059 /* UITableView+FDTemplateLayoutCellDebug.m */; };
+		DE7FA2D11D5AFFCC00667059 /* YXExampleMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2CD1D5AFFCC00667059 /* YXExampleMainCell.m */; };
+		DE7FA2D21D5AFFCC00667059 /* YXExampleMainCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7FA2CE1D5AFFCC00667059 /* YXExampleMainCell.xib */; };
+		DE7FA2D31D5AFFCC00667059 /* YXExampleMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2D01D5AFFCC00667059 /* YXExampleMainController.m */; };
+		DE7FA2D71D5B188700667059 /* YXNormalController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2D61D5B188700667059 /* YXNormalController.m */; };
+		DE7FA2DA1D5B18BF00667059 /* YXNoDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2D91D5B18BF00667059 /* YXNoDataController.m */; };
+		DE7FA2DD1D5B18DA00667059 /* YXFirstProgressController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2DC1D5B18DA00667059 /* YXFirstProgressController.m */; };
+		DE7FA2E01D5B19C400667059 /* YXSectionTypeController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2DF1D5B19C400667059 /* YXSectionTypeController.m */; };
+		DE7FA2E31D5B1CAC00667059 /* YXExampleBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2E21D5B1CAC00667059 /* YXExampleBaseController.m */; };
+		DE7FA2E71D5B1DDD00667059 /* YXExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2E51D5B1DDD00667059 /* YXExampleCell.m */; };
+		DE7FA2E81D5B1DDD00667059 /* YXExampleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7FA2E61D5B1DDD00667059 /* YXExampleCell.xib */; };
+		DE7FA2EB1D5B1DF900667059 /* YXExampleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DE7FA2EA1D5B1DF900667059 /* YXExampleModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE7FA2311D5AD73600667059 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE7FA20F1D5AD73500667059 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE7FA2161D5AD73500667059;
+			remoteInfo = YXPageViewControllerExample;
+		};
+		DE7FA23C1D5AD73600667059 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE7FA20F1D5AD73500667059 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE7FA2161D5AD73500667059;
+			remoteInfo = YXPageViewControllerExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DE7FA2171D5AD73500667059 /* YXPageViewControllerExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXPageViewControllerExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7FA21B1D5AD73500667059 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DE7FA21D1D5AD73500667059 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DE7FA21E1D5AD73500667059 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DE7FA2241D5AD73500667059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE7FA2261D5AD73500667059 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DE7FA2291D5AD73500667059 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE7FA22B1D5AD73500667059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7FA2301D5AD73600667059 /* YXPageViewControllerExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXPageViewControllerExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7FA2341D5AD73600667059 /* YXPageViewControllerExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXPageViewControllerExampleTests.m; sourceTree = "<group>"; };
+		DE7FA2361D5AD73600667059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7FA23B1D5AD73600667059 /* YXPageViewControllerExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YXPageViewControllerExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE7FA23F1D5AD73600667059 /* YXPageViewControllerExampleUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXPageViewControllerExampleUITests.m; sourceTree = "<group>"; };
+		DE7FA2411D5AD73600667059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE7FA24E1D5AD76A00667059 /* YXPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXPageViewController.h; sourceTree = "<group>"; };
+		DE7FA24F1D5AD76A00667059 /* YXPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXPageViewController.m; sourceTree = "<group>"; };
+		DE7FA2511D5AD77600667059 /* YXTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXTableCell.h; sourceTree = "<group>"; };
+		DE7FA2521D5AD77600667059 /* YXTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXTableCell.m; sourceTree = "<group>"; };
+		DE7FA2541D5AD77F00667059 /* YXRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXRefresh.h; sourceTree = "<group>"; };
+		DE7FA2551D5AD77F00667059 /* YXRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXRefresh.m; sourceTree = "<group>"; };
+		DE7FA25C1D5AF41A00667059 /* Framework-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Framework-Info.plist"; sourceTree = "<group>"; };
+		DE7FA25D1D5AF41A00667059 /* MBProgressHUD+Add.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+Add.h"; sourceTree = "<group>"; };
+		DE7FA25E1D5AF41A00667059 /* MBProgressHUD+Add.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+Add.m"; sourceTree = "<group>"; };
+		DE7FA25F1D5AF41A00667059 /* MBProgressHUD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-Prefix.pch"; sourceTree = "<group>"; };
+		DE7FA2601D5AF41A00667059 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DE7FA2611D5AF41A00667059 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		DE7FA2671D5AF44800667059 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		DE7FA2681D5AF44800667059 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		DE7FA2691D5AF44800667059 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		DE7FA26A1D5AF44800667059 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		DE7FA26B1D5AF44800667059 /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshComponent.h; sourceTree = "<group>"; };
+		DE7FA26C1D5AF44800667059 /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
+		DE7FA26D1D5AF44800667059 /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
+		DE7FA26E1D5AF44800667059 /* MJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooter.m; sourceTree = "<group>"; };
+		DE7FA26F1D5AF44800667059 /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeader.h; sourceTree = "<group>"; };
+		DE7FA2701D5AF44800667059 /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeader.m; sourceTree = "<group>"; };
+		DE7FA2741D5AF44800667059 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		DE7FA2751D5AF44800667059 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		DE7FA2761D5AF44800667059 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		DE7FA2771D5AF44800667059 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		DE7FA2781D5AF44800667059 /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		DE7FA2791D5AF44800667059 /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		DE7FA27B1D5AF44800667059 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		DE7FA27C1D5AF44800667059 /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		DE7FA27D1D5AF44800667059 /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		DE7FA27E1D5AF44800667059 /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
+		DE7FA27F1D5AF44800667059 /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		DE7FA2801D5AF44800667059 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		DE7FA2821D5AF44800667059 /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		DE7FA2831D5AF44800667059 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		DE7FA2841D5AF44800667059 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshNormalHeader.h; sourceTree = "<group>"; };
+		DE7FA2851D5AF44800667059 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		DE7FA2861D5AF44800667059 /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		DE7FA2871D5AF44800667059 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshStateHeader.m; sourceTree = "<group>"; };
+		DE7FA2881D5AF44800667059 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		DE7FA2891D5AF44800667059 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		DE7FA28A1D5AF44800667059 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		DE7FA28B1D5AF44800667059 /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		DE7FA28C1D5AF44800667059 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		DE7FA28D1D5AF44800667059 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		DE7FA28E1D5AF44800667059 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		DE7FA28F1D5AF44800667059 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		DE7FA2901D5AF44800667059 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		DE7FA2911D5AF44800667059 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		DE7FA2AD1D5AF78300667059 /* UITableView+FDIndexPathHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDIndexPathHeightCache.h"; sourceTree = "<group>"; };
+		DE7FA2AE1D5AF78300667059 /* UITableView+FDIndexPathHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDIndexPathHeightCache.m"; sourceTree = "<group>"; };
+		DE7FA2AF1D5AF78300667059 /* UITableView+FDKeyedHeightCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDKeyedHeightCache.h"; sourceTree = "<group>"; };
+		DE7FA2B01D5AF78300667059 /* UITableView+FDKeyedHeightCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDKeyedHeightCache.m"; sourceTree = "<group>"; };
+		DE7FA2B11D5AF78300667059 /* UITableView+FDTemplateLayoutCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCell.h"; sourceTree = "<group>"; };
+		DE7FA2B21D5AF78300667059 /* UITableView+FDTemplateLayoutCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCell.m"; sourceTree = "<group>"; };
+		DE7FA2B31D5AF78300667059 /* UITableView+FDTemplateLayoutCellDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+FDTemplateLayoutCellDebug.h"; sourceTree = "<group>"; };
+		DE7FA2B41D5AF78300667059 /* UITableView+FDTemplateLayoutCellDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+FDTemplateLayoutCellDebug.m"; sourceTree = "<group>"; };
+		DE7FA2CC1D5AFFCC00667059 /* YXExampleMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXExampleMainCell.h; sourceTree = "<group>"; };
+		DE7FA2CD1D5AFFCC00667059 /* YXExampleMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXExampleMainCell.m; sourceTree = "<group>"; };
+		DE7FA2CE1D5AFFCC00667059 /* YXExampleMainCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXExampleMainCell.xib; sourceTree = "<group>"; };
+		DE7FA2CF1D5AFFCC00667059 /* YXExampleMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXExampleMainController.h; sourceTree = "<group>"; };
+		DE7FA2D01D5AFFCC00667059 /* YXExampleMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXExampleMainController.m; sourceTree = "<group>"; };
+		DE7FA2D51D5B188700667059 /* YXNormalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNormalController.h; sourceTree = "<group>"; };
+		DE7FA2D61D5B188700667059 /* YXNormalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNormalController.m; sourceTree = "<group>"; };
+		DE7FA2D81D5B18BF00667059 /* YXNoDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXNoDataController.h; sourceTree = "<group>"; };
+		DE7FA2D91D5B18BF00667059 /* YXNoDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXNoDataController.m; sourceTree = "<group>"; };
+		DE7FA2DB1D5B18DA00667059 /* YXFirstProgressController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXFirstProgressController.h; sourceTree = "<group>"; };
+		DE7FA2DC1D5B18DA00667059 /* YXFirstProgressController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXFirstProgressController.m; sourceTree = "<group>"; };
+		DE7FA2DE1D5B19C400667059 /* YXSectionTypeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXSectionTypeController.h; sourceTree = "<group>"; };
+		DE7FA2DF1D5B19C400667059 /* YXSectionTypeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXSectionTypeController.m; sourceTree = "<group>"; };
+		DE7FA2E11D5B1CAC00667059 /* YXExampleBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXExampleBaseController.h; sourceTree = "<group>"; };
+		DE7FA2E21D5B1CAC00667059 /* YXExampleBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXExampleBaseController.m; sourceTree = "<group>"; };
+		DE7FA2E41D5B1DDD00667059 /* YXExampleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXExampleCell.h; sourceTree = "<group>"; };
+		DE7FA2E51D5B1DDD00667059 /* YXExampleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXExampleCell.m; sourceTree = "<group>"; };
+		DE7FA2E61D5B1DDD00667059 /* YXExampleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YXExampleCell.xib; sourceTree = "<group>"; };
+		DE7FA2E91D5B1DF900667059 /* YXExampleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXExampleModel.h; sourceTree = "<group>"; };
+		DE7FA2EA1D5B1DF900667059 /* YXExampleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXExampleModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE7FA2141D5AD73500667059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7FA22D1D5AD73600667059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7FA2381D5AD73600667059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE7FA20E1D5AD73500667059 = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2191D5AD73500667059 /* YXPageViewControllerExample */,
+				DE7FA2331D5AD73600667059 /* YXPageViewControllerExampleTests */,
+				DE7FA23E1D5AD73600667059 /* YXPageViewControllerExampleUITests */,
+				DE7FA2181D5AD73500667059 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DE7FA2181D5AD73500667059 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2171D5AD73500667059 /* YXPageViewControllerExample.app */,
+				DE7FA2301D5AD73600667059 /* YXPageViewControllerExampleTests.xctest */,
+				DE7FA23B1D5AD73600667059 /* YXPageViewControllerExampleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE7FA2191D5AD73500667059 /* YXPageViewControllerExample */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2CB1D5AFFCC00667059 /* Example */,
+				DE7FA25A1D5AF40B00667059 /* Lib */,
+				DE7FA24D1D5AD74B00667059 /* YXPageViewController */,
+				DE7FA21D1D5AD73500667059 /* AppDelegate.h */,
+				DE7FA21E1D5AD73500667059 /* AppDelegate.m */,
+				DE7FA2231D5AD73500667059 /* Main.storyboard */,
+				DE7FA2261D5AD73500667059 /* Assets.xcassets */,
+				DE7FA2281D5AD73500667059 /* LaunchScreen.storyboard */,
+				DE7FA22B1D5AD73500667059 /* Info.plist */,
+				DE7FA21A1D5AD73500667059 /* Supporting Files */,
+			);
+			path = YXPageViewControllerExample;
+			sourceTree = "<group>";
+		};
+		DE7FA21A1D5AD73500667059 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA21B1D5AD73500667059 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE7FA2331D5AD73600667059 /* YXPageViewControllerExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2341D5AD73600667059 /* YXPageViewControllerExampleTests.m */,
+				DE7FA2361D5AD73600667059 /* Info.plist */,
+			);
+			path = YXPageViewControllerExampleTests;
+			sourceTree = "<group>";
+		};
+		DE7FA23E1D5AD73600667059 /* YXPageViewControllerExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA23F1D5AD73600667059 /* YXPageViewControllerExampleUITests.m */,
+				DE7FA2411D5AD73600667059 /* Info.plist */,
+			);
+			path = YXPageViewControllerExampleUITests;
+			sourceTree = "<group>";
+		};
+		DE7FA24D1D5AD74B00667059 /* YXPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2AC1D5AF78300667059 /* UITableView+FDTemplateLayoutCell */,
+				DE7FA24E1D5AD76A00667059 /* YXPageViewController.h */,
+				DE7FA24F1D5AD76A00667059 /* YXPageViewController.m */,
+				DE7FA2511D5AD77600667059 /* YXTableCell.h */,
+				DE7FA2521D5AD77600667059 /* YXTableCell.m */,
+				DE7FA2541D5AD77F00667059 /* YXRefresh.h */,
+				DE7FA2551D5AD77F00667059 /* YXRefresh.m */,
+			);
+			path = YXPageViewController;
+			sourceTree = "<group>";
+		};
+		DE7FA25A1D5AF40B00667059 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2651D5AF44800667059 /* MJRefresh */,
+				DE7FA25B1D5AF41900667059 /* MBProgressHUD */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		DE7FA25B1D5AF41900667059 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA25C1D5AF41A00667059 /* Framework-Info.plist */,
+				DE7FA25D1D5AF41A00667059 /* MBProgressHUD+Add.h */,
+				DE7FA25E1D5AF41A00667059 /* MBProgressHUD+Add.m */,
+				DE7FA25F1D5AF41A00667059 /* MBProgressHUD-Prefix.pch */,
+				DE7FA2601D5AF41A00667059 /* MBProgressHUD.h */,
+				DE7FA2611D5AF41A00667059 /* MBProgressHUD.m */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		DE7FA2651D5AF44800667059 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2661D5AF44800667059 /* Base */,
+				DE7FA2711D5AF44800667059 /* Custom */,
+				DE7FA2881D5AF44800667059 /* MJRefresh.bundle */,
+				DE7FA2891D5AF44800667059 /* MJRefresh.h */,
+				DE7FA28A1D5AF44800667059 /* MJRefreshConst.h */,
+				DE7FA28B1D5AF44800667059 /* MJRefreshConst.m */,
+				DE7FA28C1D5AF44800667059 /* UIScrollView+MJExtension.h */,
+				DE7FA28D1D5AF44800667059 /* UIScrollView+MJExtension.m */,
+				DE7FA28E1D5AF44800667059 /* UIScrollView+MJRefresh.h */,
+				DE7FA28F1D5AF44800667059 /* UIScrollView+MJRefresh.m */,
+				DE7FA2901D5AF44800667059 /* UIView+MJExtension.h */,
+				DE7FA2911D5AF44800667059 /* UIView+MJExtension.m */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		DE7FA2661D5AF44800667059 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2671D5AF44800667059 /* MJRefreshAutoFooter.h */,
+				DE7FA2681D5AF44800667059 /* MJRefreshAutoFooter.m */,
+				DE7FA2691D5AF44800667059 /* MJRefreshBackFooter.h */,
+				DE7FA26A1D5AF44800667059 /* MJRefreshBackFooter.m */,
+				DE7FA26B1D5AF44800667059 /* MJRefreshComponent.h */,
+				DE7FA26C1D5AF44800667059 /* MJRefreshComponent.m */,
+				DE7FA26D1D5AF44800667059 /* MJRefreshFooter.h */,
+				DE7FA26E1D5AF44800667059 /* MJRefreshFooter.m */,
+				DE7FA26F1D5AF44800667059 /* MJRefreshHeader.h */,
+				DE7FA2701D5AF44800667059 /* MJRefreshHeader.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		DE7FA2711D5AF44800667059 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2721D5AF44800667059 /* Footer */,
+				DE7FA2811D5AF44800667059 /* Header */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		DE7FA2721D5AF44800667059 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2731D5AF44800667059 /* Auto */,
+				DE7FA27A1D5AF44800667059 /* Back */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		DE7FA2731D5AF44800667059 /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2741D5AF44800667059 /* MJRefreshAutoGifFooter.h */,
+				DE7FA2751D5AF44800667059 /* MJRefreshAutoGifFooter.m */,
+				DE7FA2761D5AF44800667059 /* MJRefreshAutoNormalFooter.h */,
+				DE7FA2771D5AF44800667059 /* MJRefreshAutoNormalFooter.m */,
+				DE7FA2781D5AF44800667059 /* MJRefreshAutoStateFooter.h */,
+				DE7FA2791D5AF44800667059 /* MJRefreshAutoStateFooter.m */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		DE7FA27A1D5AF44800667059 /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA27B1D5AF44800667059 /* MJRefreshBackGifFooter.h */,
+				DE7FA27C1D5AF44800667059 /* MJRefreshBackGifFooter.m */,
+				DE7FA27D1D5AF44800667059 /* MJRefreshBackNormalFooter.h */,
+				DE7FA27E1D5AF44800667059 /* MJRefreshBackNormalFooter.m */,
+				DE7FA27F1D5AF44800667059 /* MJRefreshBackStateFooter.h */,
+				DE7FA2801D5AF44800667059 /* MJRefreshBackStateFooter.m */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
+		DE7FA2811D5AF44800667059 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2821D5AF44800667059 /* MJRefreshGifHeader.h */,
+				DE7FA2831D5AF44800667059 /* MJRefreshGifHeader.m */,
+				DE7FA2841D5AF44800667059 /* MJRefreshNormalHeader.h */,
+				DE7FA2851D5AF44800667059 /* MJRefreshNormalHeader.m */,
+				DE7FA2861D5AF44800667059 /* MJRefreshStateHeader.h */,
+				DE7FA2871D5AF44800667059 /* MJRefreshStateHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		DE7FA2AC1D5AF78300667059 /* UITableView+FDTemplateLayoutCell */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2AD1D5AF78300667059 /* UITableView+FDIndexPathHeightCache.h */,
+				DE7FA2AE1D5AF78300667059 /* UITableView+FDIndexPathHeightCache.m */,
+				DE7FA2AF1D5AF78300667059 /* UITableView+FDKeyedHeightCache.h */,
+				DE7FA2B01D5AF78300667059 /* UITableView+FDKeyedHeightCache.m */,
+				DE7FA2B11D5AF78300667059 /* UITableView+FDTemplateLayoutCell.h */,
+				DE7FA2B21D5AF78300667059 /* UITableView+FDTemplateLayoutCell.m */,
+				DE7FA2B31D5AF78300667059 /* UITableView+FDTemplateLayoutCellDebug.h */,
+				DE7FA2B41D5AF78300667059 /* UITableView+FDTemplateLayoutCellDebug.m */,
+			);
+			path = "UITableView+FDTemplateLayoutCell";
+			sourceTree = "<group>";
+		};
+		DE7FA2CB1D5AFFCC00667059 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2D41D5B182B00667059 /* YXExampleControllers */,
+				DE7FA2CC1D5AFFCC00667059 /* YXExampleMainCell.h */,
+				DE7FA2CD1D5AFFCC00667059 /* YXExampleMainCell.m */,
+				DE7FA2CE1D5AFFCC00667059 /* YXExampleMainCell.xib */,
+				DE7FA2CF1D5AFFCC00667059 /* YXExampleMainController.h */,
+				DE7FA2D01D5AFFCC00667059 /* YXExampleMainController.m */,
+			);
+			name = Example;
+			path = YXPageViewController/Example;
+			sourceTree = "<group>";
+		};
+		DE7FA2D41D5B182B00667059 /* YXExampleControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DE7FA2D51D5B188700667059 /* YXNormalController.h */,
+				DE7FA2D61D5B188700667059 /* YXNormalController.m */,
+				DE7FA2D81D5B18BF00667059 /* YXNoDataController.h */,
+				DE7FA2D91D5B18BF00667059 /* YXNoDataController.m */,
+				DE7FA2DB1D5B18DA00667059 /* YXFirstProgressController.h */,
+				DE7FA2DC1D5B18DA00667059 /* YXFirstProgressController.m */,
+				DE7FA2DE1D5B19C400667059 /* YXSectionTypeController.h */,
+				DE7FA2DF1D5B19C400667059 /* YXSectionTypeController.m */,
+				DE7FA2E11D5B1CAC00667059 /* YXExampleBaseController.h */,
+				DE7FA2E21D5B1CAC00667059 /* YXExampleBaseController.m */,
+				DE7FA2E41D5B1DDD00667059 /* YXExampleCell.h */,
+				DE7FA2E51D5B1DDD00667059 /* YXExampleCell.m */,
+				DE7FA2E61D5B1DDD00667059 /* YXExampleCell.xib */,
+				DE7FA2E91D5B1DF900667059 /* YXExampleModel.h */,
+				DE7FA2EA1D5B1DF900667059 /* YXExampleModel.m */,
+			);
+			path = YXExampleControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE7FA2161D5AD73500667059 /* YXPageViewControllerExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7FA2441D5AD73600667059 /* Build configuration list for PBXNativeTarget "YXPageViewControllerExample" */;
+			buildPhases = (
+				DE7FA2131D5AD73500667059 /* Sources */,
+				DE7FA2141D5AD73500667059 /* Frameworks */,
+				DE7FA2151D5AD73500667059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YXPageViewControllerExample;
+			productName = YXPageViewControllerExample;
+			productReference = DE7FA2171D5AD73500667059 /* YXPageViewControllerExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE7FA22F1D5AD73600667059 /* YXPageViewControllerExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7FA2471D5AD73600667059 /* Build configuration list for PBXNativeTarget "YXPageViewControllerExampleTests" */;
+			buildPhases = (
+				DE7FA22C1D5AD73600667059 /* Sources */,
+				DE7FA22D1D5AD73600667059 /* Frameworks */,
+				DE7FA22E1D5AD73600667059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE7FA2321D5AD73600667059 /* PBXTargetDependency */,
+			);
+			name = YXPageViewControllerExampleTests;
+			productName = YXPageViewControllerExampleTests;
+			productReference = DE7FA2301D5AD73600667059 /* YXPageViewControllerExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE7FA23A1D5AD73600667059 /* YXPageViewControllerExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE7FA24A1D5AD73600667059 /* Build configuration list for PBXNativeTarget "YXPageViewControllerExampleUITests" */;
+			buildPhases = (
+				DE7FA2371D5AD73600667059 /* Sources */,
+				DE7FA2381D5AD73600667059 /* Frameworks */,
+				DE7FA2391D5AD73600667059 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE7FA23D1D5AD73600667059 /* PBXTargetDependency */,
+			);
+			name = YXPageViewControllerExampleUITests;
+			productName = YXPageViewControllerExampleUITests;
+			productReference = DE7FA23B1D5AD73600667059 /* YXPageViewControllerExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE7FA20F1D5AD73500667059 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = yuxiao;
+				TargetAttributes = {
+					DE7FA2161D5AD73500667059 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					DE7FA22F1D5AD73600667059 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DE7FA2161D5AD73500667059;
+					};
+					DE7FA23A1D5AD73600667059 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DE7FA2161D5AD73500667059;
+					};
+				};
+			};
+			buildConfigurationList = DE7FA2121D5AD73500667059 /* Build configuration list for PBXProject "YXPageViewControllerExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE7FA20E1D5AD73500667059;
+			productRefGroup = DE7FA2181D5AD73500667059 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE7FA2161D5AD73500667059 /* YXPageViewControllerExample */,
+				DE7FA22F1D5AD73600667059 /* YXPageViewControllerExampleTests */,
+				DE7FA23A1D5AD73600667059 /* YXPageViewControllerExampleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE7FA2151D5AD73500667059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7FA22A1D5AD73500667059 /* LaunchScreen.storyboard in Resources */,
+				DE7FA2D21D5AFFCC00667059 /* YXExampleMainCell.xib in Resources */,
+				DE7FA2621D5AF41A00667059 /* Framework-Info.plist in Resources */,
+				DE7FA2271D5AD73500667059 /* Assets.xcassets in Resources */,
+				DE7FA2A01D5AF44800667059 /* MJRefresh.bundle in Resources */,
+				DE7FA2E81D5B1DDD00667059 /* YXExampleCell.xib in Resources */,
+				DE7FA2251D5AD73500667059 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7FA22E1D5AD73600667059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7FA2391D5AD73600667059 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE7FA2131D5AD73500667059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7FA2921D5AF44800667059 /* MJRefreshAutoFooter.m in Sources */,
+				DE7FA2EB1D5B1DF900667059 /* YXExampleModel.m in Sources */,
+				DE7FA2B71D5AF78300667059 /* UITableView+FDTemplateLayoutCell.m in Sources */,
+				DE7FA2991D5AF44800667059 /* MJRefreshAutoStateFooter.m in Sources */,
+				DE7FA2B61D5AF78300667059 /* UITableView+FDKeyedHeightCache.m in Sources */,
+				DE7FA2E31D5B1CAC00667059 /* YXExampleBaseController.m in Sources */,
+				DE7FA29B1D5AF44800667059 /* MJRefreshBackNormalFooter.m in Sources */,
+				DE7FA2B51D5AF78300667059 /* UITableView+FDIndexPathHeightCache.m in Sources */,
+				DE7FA29D1D5AF44800667059 /* MJRefreshGifHeader.m in Sources */,
+				DE7FA2A21D5AF44800667059 /* UIScrollView+MJExtension.m in Sources */,
+				DE7FA2961D5AF44800667059 /* MJRefreshHeader.m in Sources */,
+				DE7FA2DD1D5B18DA00667059 /* YXFirstProgressController.m in Sources */,
+				DE7FA2DA1D5B18BF00667059 /* YXNoDataController.m in Sources */,
+				DE7FA2A31D5AF44800667059 /* UIScrollView+MJRefresh.m in Sources */,
+				DE7FA2931D5AF44800667059 /* MJRefreshBackFooter.m in Sources */,
+				DE7FA2A11D5AF44800667059 /* MJRefreshConst.m in Sources */,
+				DE7FA21F1D5AD73500667059 /* AppDelegate.m in Sources */,
+				DE7FA2D71D5B188700667059 /* YXNormalController.m in Sources */,
+				DE7FA2561D5AD77F00667059 /* YXRefresh.m in Sources */,
+				DE7FA2971D5AF44800667059 /* MJRefreshAutoGifFooter.m in Sources */,
+				DE7FA2641D5AF41A00667059 /* MBProgressHUD.m in Sources */,
+				DE7FA2531D5AD77600667059 /* YXTableCell.m in Sources */,
+				DE7FA2D11D5AFFCC00667059 /* YXExampleMainCell.m in Sources */,
+				DE7FA2E01D5B19C400667059 /* YXSectionTypeController.m in Sources */,
+				DE7FA2951D5AF44800667059 /* MJRefreshFooter.m in Sources */,
+				DE7FA2D31D5AFFCC00667059 /* YXExampleMainController.m in Sources */,
+				DE7FA2941D5AF44800667059 /* MJRefreshComponent.m in Sources */,
+				DE7FA29A1D5AF44800667059 /* MJRefreshBackGifFooter.m in Sources */,
+				DE7FA2501D5AD76A00667059 /* YXPageViewController.m in Sources */,
+				DE7FA2B81D5AF78300667059 /* UITableView+FDTemplateLayoutCellDebug.m in Sources */,
+				DE7FA29F1D5AF44800667059 /* MJRefreshStateHeader.m in Sources */,
+				DE7FA29C1D5AF44800667059 /* MJRefreshBackStateFooter.m in Sources */,
+				DE7FA2A41D5AF44800667059 /* UIView+MJExtension.m in Sources */,
+				DE7FA29E1D5AF44800667059 /* MJRefreshNormalHeader.m in Sources */,
+				DE7FA2981D5AF44800667059 /* MJRefreshAutoNormalFooter.m in Sources */,
+				DE7FA2E71D5B1DDD00667059 /* YXExampleCell.m in Sources */,
+				DE7FA21C1D5AD73500667059 /* main.m in Sources */,
+				DE7FA2631D5AF41A00667059 /* MBProgressHUD+Add.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7FA22C1D5AD73600667059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7FA2351D5AD73600667059 /* YXPageViewControllerExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE7FA2371D5AD73600667059 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE7FA2401D5AD73600667059 /* YXPageViewControllerExampleUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE7FA2321D5AD73600667059 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE7FA2161D5AD73500667059 /* YXPageViewControllerExample */;
+			targetProxy = DE7FA2311D5AD73600667059 /* PBXContainerItemProxy */;
+		};
+		DE7FA23D1D5AD73600667059 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE7FA2161D5AD73500667059 /* YXPageViewControllerExample */;
+			targetProxy = DE7FA23C1D5AD73600667059 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE7FA2231D5AD73500667059 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE7FA2241D5AD73500667059 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE7FA2281D5AD73500667059 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE7FA2291D5AD73500667059 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE7FA2421D5AD73600667059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DE7FA2431D5AD73600667059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE7FA2451D5AD73600667059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YXPageViewControllerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuxiao.ios.YXPageViewControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DE7FA2461D5AD73600667059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YXPageViewControllerExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuxiao.ios.YXPageViewControllerExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DE7FA2481D5AD73600667059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YXPageViewControllerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuxiao.ios.YXPageViewControllerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YXPageViewControllerExample.app/YXPageViewControllerExample";
+			};
+			name = Debug;
+		};
+		DE7FA2491D5AD73600667059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YXPageViewControllerExampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuxiao.ios.YXPageViewControllerExampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YXPageViewControllerExample.app/YXPageViewControllerExample";
+			};
+			name = Release;
+		};
+		DE7FA24B1D5AD73600667059 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YXPageViewControllerExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuxiao.ios.YXPageViewControllerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YXPageViewControllerExample;
+			};
+			name = Debug;
+		};
+		DE7FA24C1D5AD73600667059 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YXPageViewControllerExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.yuxiao.ios.YXPageViewControllerExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YXPageViewControllerExample;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE7FA2121D5AD73500667059 /* Build configuration list for PBXProject "YXPageViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7FA2421D5AD73600667059 /* Debug */,
+				DE7FA2431D5AD73600667059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE7FA2441D5AD73600667059 /* Build configuration list for PBXNativeTarget "YXPageViewControllerExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7FA2451D5AD73600667059 /* Debug */,
+				DE7FA2461D5AD73600667059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DE7FA2471D5AD73600667059 /* Build configuration list for PBXNativeTarget "YXPageViewControllerExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7FA2481D5AD73600667059 /* Debug */,
+				DE7FA2491D5AD73600667059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DE7FA24A1D5AD73600667059 /* Build configuration list for PBXNativeTarget "YXPageViewControllerExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE7FA24B1D5AD73600667059 /* Debug */,
+				DE7FA24C1D5AD73600667059 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE7FA20F1D5AD73500667059 /* Project object */;
+}
